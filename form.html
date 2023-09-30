@@ -5,41 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESUME FORGE</title>
 </head>
-<body>
-    <h1>RESUME FORGE</h1>
-    <form action="/" method="post">
+<style>
+    body{
+        padding: 100px;
+        background-color: rgb(255, 255, 255);
+        font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    #main_text{
+        font-size: 100px;
+        font-weight: 500 ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    input[ type = "submit"]{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: #ff000098;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: whitesmoke;
+        border-radius: 10%;
+        box-shadow: 0px 0px 2px 2px rgb(75, 0, 0);
+        font-size: 16px;
+    }
+    input:hover[type ~= "submit"] {
+      background-color:#ffffff;
+      transition: 0.3s;
+  }
 
-        <fieldset>
+
+</style>
+<body>
+    <body background="kali.jpg">   
+
+    <h1 style = "color : #ff0000b4">Resume Forge</h1>
+    <form action="/" method="post">
+        
+        <fieldset style="border: 2px solid #ff000060;">
             <legend><b>Personal Details</b></legend>
 
             <label for="full_name">Full Name:</label>
             <input type="text" id="full_name" name="full_name" required><br>
-            
+            <br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
-            
+            <br>
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone"><br>
-            
+            <br>
             <label for="address">Address:</label>
             <input type="text" id="address" name="address"><br>
         </fieldset>
-        
-        <fieldset>
+        <br>
+        <fieldset style="border: 2px solid #ff000060";>
             <legend><b>Education</b></legend>
 
             <h5>Graduation </h5> <br>
             <label for="univ">University: </label>
+            
             <input type="text" name="univ" id="univ">
+            
             <label for="course">Degree: </label>
             <input type="text" name="course" id="course">
-            <label for="univ_from">from</label>
+            <label for="univ_from">From</label>
             <input type="month" name="univ_from" id="univ_from">
             <label for="univ_to">to</label>
             <input type="month" name="univ_to" id="univ_to"><br>
+            <br>
             <label for="univ_add">Details:</label>
+            <br>
             <textarea id="univ_add" name="univ_add" rows="4" cols="50"></textarea><br><br>
-
+            <hr size="1" width = "200" color="red">
             <h5>Schooling</h5>  <br>
             <label for="schl">School:</label>
             <input type="text" name="schl" id="schl">
@@ -48,31 +89,42 @@
             <label for="schl_from">from</label>
             <input type="month" name="schl_from" id="schl_from">
             <label for="schl_to">to</label>
+            
             <input type="month" name="schl_to" id="schl_to"><br>
+            <br>
             <label for="schl_add">Details:</label>
+            <br>
             <textarea id="schl_add" name="schl_add" rows="4" cols="50"></textarea><br><br>
         </fieldset>
             
-
-        <fieldset>
+        <br>
+        <fieldset style="border: 2px solid #ff000060";>
             <legend><b>Experience</b></legend>
 
             <label for="exp_title">Title</label>
             <input type="text" name="exp_title" id="exp_title"> <br>
+            <br>
             <label for="exp_details">Details:</label>
-            <textarea id="exp_details" name="exp_details" rows="4" cols="50"></textarea><br>
+            <br>
 
+            <textarea id="exp_details" name="exp_details" rows="4" cols="50"></textarea><br>
+            
+            <br>
             <input type="button" name="add_exp" id="add_exp" value="Add Experience">
         </fieldset>
-        
-        <fieldset>
-            <legend><b>Skills</b></legend>
 
-            <label for="skills">Skills:</label>
-            <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
-        </fieldset>
+        <br>
         
+        <fieldset style="border: 2px solid #ff000060";>
+            <legend><b>Skills</b></legend>
+            <br>
+            <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
+            
+        </fieldset>
+        <br>
         <input type="submit" value="Submit">
+        
     </form>
+    
 </body>
 </html>
