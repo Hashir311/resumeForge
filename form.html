@@ -5,126 +5,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESUME FORGE</title>
 </head>
-<style>
-    body{
-        padding: 100px;
-        background-color: rgb(255, 255, 255);
-        font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: rgb(255, 255, 255);
-    }
-    #main_text{
-        font-size: 100px;
-        font-weight: 500 ;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-    }
-    input[ type = "submit"]{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        background-color: #ff000098;
-        border: none;
-        color: rgb(0, 0, 0);
-        padding: 10px 30px;
-        text-align: center;
-        text-decoration: whitesmoke;
-        border-radius: 10%;
-        box-shadow: 0px 0px 2px 2px rgb(75, 0, 0);
-        font-size: 16px;
-    }
-    input:hover[type ~= "submit"] {
-      background-color:#ffffff;
-      transition: 0.3s;
-  }
 
-
-</style>
-<body>
-    <body background="kali.jpg">   
-
-    <h1 style = "color : #ff0000b4">Resume Forge</h1>
+<body>   
+    <div id="main_head"><span>RESUMEforge</span></div>
     <form action="/" method="post">
-        
-        <fieldset style="border: 2px solid #ff000060;">
-            <legend><b>Personal Details</b></legend>
-
-            <label for="full_name">Full Name:</label>
-            <input type="text" id="full_name" name="full_name" required><br>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <br>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone"><br>
-            <br>
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address"><br>
-        </fieldset>
-        <br>
-        <fieldset style="border: 2px solid #ff000060";>
-            <legend><b>Education</b></legend>
-
-            <h5>Graduation </h5> <br>
-            <label for="univ">University: </label>
-            
-            <input type="text" name="univ" id="univ">
-            
-            <label for="course">Degree: </label>
-            <input type="text" name="course" id="course">
-            <label for="univ_from">From</label>
-            <input type="month" name="univ_from" id="univ_from">
-            <label for="univ_to">to</label>
-            <input type="month" name="univ_to" id="univ_to"><br>
-            <br>
-            <label for="univ_add">Details:</label>
-            <br>
-            <textarea id="univ_add" name="univ_add" rows="4" cols="50"></textarea><br><br>
-            <hr size="1" width = "200" color="red">
-            <h5>Schooling</h5>  <br>
-            <label for="schl">School:</label>
-            <input type="text" name="schl" id="schl">
-            <label for="stream">Stream:</label>
-            <input type="text" name="stream" id="stream">
-            <label for="schl_from">from</label>
-            <input type="month" name="schl_from" id="schl_from">
-            <label for="schl_to">to</label>
-            
-            <input type="month" name="schl_to" id="schl_to"><br>
-            <br>
-            <label for="schl_add">Details:</label>
-            <br>
-            <textarea id="schl_add" name="schl_add" rows="4" cols="50"></textarea><br><br>
-        </fieldset>
-            
-        <br>
-        <fieldset style="border: 2px solid #ff000060";>
-            <legend><b>Experience</b></legend>
-
-            <label for="exp_title">Title</label>
-            <input type="text" name="exp_title" id="exp_title"> <br>
-            <br>
-            <label for="exp_details">Details:</label>
-            <br>
-
-            <textarea id="exp_details" name="exp_details" rows="4" cols="50"></textarea><br>
-            
-            <br>
-            <input type="button" name="add_exp" id="add_exp" value="Add Experience">
-        </fieldset>
-
-        <br>
-        
-        <fieldset style="border: 2px solid #ff000060";>
-            <legend><b>Skills</b></legend>
-            <br>
-            <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
-            
-        </fieldset>
-        <br>
-        <input type="submit" value="Submit">
-        
-    </form>
+        <div id="personal_main">
+            <div id="personal_div">
+                <fieldset id="personal">
+                    <legend><b>Personal</b></legend>
     
+                    <div id="personal_sub">
+                        <div id="details_div">
+                            <fieldset id="details">
+                                <legend id="sub">Details</legend>
+            
+                                <div id="details_sub">
+                                    <div>
+                                        <label for="full_name">Full Name:</label>
+                                        <input type="text" id="full_name" name="full_name" required><br>
+                                        <br>
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required><br>
+                                        <br>
+                                        <label for="phone">Phone:</label>
+                                        <input type="tel" id="phone" name="phone"><br>
+                                        <br>
+                                        <label for="city">City:</label>
+                                        <input type="text" id="city" name="city"><br>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+            
+                        <div id="social_div">
+                            <fieldset id="socials">
+                                <legend id="sub">Socials</legend>
+            
+                                <div id="social_sub">
+                                    <div>
+                                        <label for="linkedin">LinkedIn:</label>
+                                        <input type="text" name="linkedin" id="linkedin"><br><br>
+                                        <label for="twitter">X(Twitter):</label>
+                                        <input type="text" name="twitter" id="twitter"><br><br>
+                                        <label for="instagram">Instagram:</label>
+                                        <input type="text" name="instagram" id="instagram"><br><br>
+                                        <label for="facebook">Facebook:</label>
+                                        <input type="text" name="facebook" id="facebook"><br>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                            
+                    </div>  
+                </fieldset>
+
+            </div>
+            
+        </div>
+
+        <div id="education_main">
+            <div id="education_div">
+                <fieldset id="education">
+                    <legend><b>Education</b></legend>
+        
+                    <div id="education_sub">
+                        <div id="graduation_div">
+                            <fieldset id="graduation">
+                                <legend id="sub">Graduation</legend>
+    
+                                <label for="univ">University: </label>
+                                <input type="text" name="univ" id="univ"> <br>
+                                <label for="course">Degree: </label>
+                                <input type="text" name="course" id="course"> <br>
+                                <label for="univ_from">From</label>
+                                <input type="month" name="univ_from" id="univ_from">
+                                <label for="univ_to">to</label>
+                                <input type="month" name="univ_to" id="univ_to"><br><br>
+                                <label for="univ_add">Details:</label><br>             
+                                <textarea id="univ_add" name="univ_add" rows="4" cols="50"></textarea><br>
+                            </fieldset>
+                        </div>
+                        
+                        <div id="schooling_div">
+                            <fieldset id="schooling">
+                                <legend id="sub">School</legend>
+    
+                                <label for="schl">School:</label>
+                                <input type="text" name="schl" id="schl"> <br>
+                                <label for="stream">Stream:</label>
+                                <input type="text" name="stream" id="stream"> <br>
+                                <label for="schl_from">from</label>
+                                <input type="month" name="schl_from" id="schl_from">
+                                <label for="schl_to">to</label>
+                                <input type="month" name="schl_to" id="schl_to"><br>
+                                <br>
+                                <label for="schl_add">Details:</label>
+                                <br>
+                                <textarea id="schl_add" name="schl_add" rows="4" cols="50"></textarea><br>
+                            </fieldset> 
+                        </div>
+                    </div>
+                </fieldset> 
+            </div>
+        </div>
+
+        <div id="project_main">
+            <div id="project_div">
+                <fieldset id="projects">
+                    <legend><b>Projects</b></legend>
+    
+                    <label for="project_title">Title</label>
+                    <input type="text" name="project_title" id="project_title"> <br><br>
+                    <label for="project_details">Details:</label><br>
+                    <textarea id="project_details" name="project_details" rows="4" cols="50"></textarea><br><br>
+                    <input type="button" name="add_project" id="add_project" value="Add Project">
+                </fieldset>
+            </div>
+        </div>
+
+        <div id="skill_main">
+            <div id="skill_div">
+                <fieldset>
+                    <legend><b>Skills</b></legend>
+                    <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br>
+                </fieldset>
+            </div>
+        </div>
+   
+        <input type="submit" value="Submit">
+    </form>
 </body>
+
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    #main_head {
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+    }
+
+    span {
+        font-size: 36px;
+    }
+
+    legend {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #sub {
+        text-align: left;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="month"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #2980b9;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #f7f7f7;
+    }
+
+    #add_project {
+        background-color: #3498db;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #add_project:hover {
+        background-color: #2980b9;
+    }
+
+    #personal_div,
+    #education_div,
+    #project_div,
+    #skill_div {
+        padding: 20px;
+        margin: auto;
+        width: 80%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+
+    #personal_div,
+    #education_div,
+    #project_div,
+    #skill_div {
+        background-color: white;
+    }
+
+
+    label {
+        font-weight: bold;
+    }
+
+
+    #skills {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+
+    input[type="text"]#linkedin,
+    input[type="text"]#twitter,
+    input[type="text"]#instagram,
+    input[type="text"]#facebook {
+        width: 80%;
+    }
+
+
+
+
+
+
+    /* old csss starts */
+    body{
+        text-align: center;
+    }
+    span{
+        font-size: 50px;
+    }
+    legend{
+        text-align: center;
+        font-size: xx-large;
+    }
+    #sub{
+        text-align: left;
+        font-size: x-large;
+    }
+
+    #personal_main,
+    #personal_sub,
+    #educaton_main,
+    #details_sub,
+    #social_sub,
+    #education_sub,
+    #project_main,
+    #skill_main{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #project_div,
+    #personal_div,
+    #education_main,
+    #skill_div{
+        padding: 20px;
+        margin: auto;
+        width: 80%;
+    }
+</style>
 </html>
