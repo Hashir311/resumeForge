@@ -5,7 +5,7 @@
     }
 
     #main_head {
-        background-color: #3498db;
+        background-color: #a90000;
         color: white;
         padding: 10px;
     }
@@ -40,7 +40,7 @@
     }
 
     input[type="submit"] {
-        background-color: #3498db;
+        background-color: #a90000;
         color: white;
         padding: 10px 20px;
         border: none;
@@ -50,7 +50,7 @@
     }
 
     input[type="submit"]:hover {
-        background-color: #2980b9;
+        background-color: #a90000;
     }
 
     fieldset {
@@ -62,7 +62,7 @@
     }
 
     #add_project {
-        background-color: #3498db;
+        background-color: #a90000;
         color: white;
         padding: 5px 10px;
         border: none;
@@ -71,7 +71,7 @@
     }
 
     #add_project:hover {
-        background-color: #2980b9;
+        background-color: #a90000;
     }
 
     #personal_div,
